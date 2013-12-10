@@ -19,6 +19,8 @@ recalcc
         *getcsv.sh sheetname
          will produce a csv export of sheetname to stdout (this can be
          piped into sc using 'getcsv.sh sheetname | psc -d , | sc'
+         NB : this version uses /dev/shm/sc.tmp as a spool. If you don't
+         have /dev/shm change it to /tmp/whatever and recompile.
 CHANGES BETWEEN 7.15 and 7.16:
 Chuck Martin
 	-The marks for the last nine edited cells are now updated properly
