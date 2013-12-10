@@ -1,0 +1,101 @@
+
+This is a brief sc tutorial, best run in a 24-line window.  
+Type 'q' to exit, ^Z to suspend (w/ Job Control). 
+^G interrupts a command.      
+
+Cells are named by their column and row number.  For example,         
+Cell A6   Cell B6   Cell C6   
+Cell A7   
+Cell A8             Cell C8   
+Cells range from A0 to ZZ(some number depending on free memory).      
+Cells can also be named by the user.  See 'range names' in the manual.
+You can move the cursor a couple of different ways:         
+          ^n, j and the <DOWN> arrow key go down  
+          ^p, k and the <UP> arrow key go up      
+          ^b, h and the <LEFT> arrow key go left  
+          ^f, l and the <RIGHT> arrow key go right
+          You can go directly to a cell by typing 'g' and the cell name.        
+          'g c6' will take you to cell c6.        
+Cells can contain numbers, formulas, or text.     
+Most of the cells on this page contain text.      
+                    <Type 'g page2' to continue>                      
+
+Cell d22 contains text        Text      
+Cell d23 contains a number        123.34
+Cell d24 contains a formula       211.34
+
+To see what the cell contains, just move the cursor         
+onto the cell.  The contents will show up on line 1 in the brackets.  
+
+You can enter data into cells like this:
+          '<text' enters left justified text.     
+          '>text' enters right justified text.    
+          '=number' enters a number     
+          '=formula' enters a formula.  
+
+Try duplicating d22 through d24 in e22 through e24.         
+
+You erase a cell by typing 'x' with the cursor on the cell. 
+
+
+                    <Type 'g page3' to continue>                      
+
+Here is a typical use for numbers and formulas:   
+
+     10.30   1877.50    234.70             2122.50
+     44.56     44.30     -3.00               85.86
+     88.74   8000.00     -9.00             8079.74
+     99.20    -88.00    -44.60              -33.40
+
+    242.80   9833.80    178.10            10254.70
+
+The data is entered in a44 through c47. 
+Cells a49, b49, and c49, sum their respective columns.      
+Cells e44, e45, e46, and e47 sum their respective rows.     
+Cell E49 is a grand total.    
+Try changing some of the data cells and watch the sums change.        
+
+You can also edit cells by putting the cursor on the cell and typing: 
+          'e' to edit the numeric portion.        
+          'E' to edit the string portion.         
+                    <Type 'g page4' to continue>                      
+
+Since you are reading this, you know that you can load      
+a data base from a file by typing the file name as an       
+argument to the program.  You can also load or save a       
+data base using the file commands:      
+
+          'G file'  Gets the data from an sc file.
+          'P file'  Puts the data from the spreadsheet into a file.   
+
+Try 'P foo.sc' to write this to the file foo.sc   
+The Get command erases the current spreadsheet.   
+To merge a spreadsheet with the one currently in  
+the machine, use:   
+
+          'M file'  Merge the data from a saved sc file.    
+
+You can also get human readable versions of the data        
+by using the Write command:   
+
+                    <Type 'g page5' to continue>                      
+
+Try 'W tut.txt' for a clear text version of the tutorial.   
+
+
+This is the end of the tutorial.  We have explored
+The basic commands.  Much more detail is available
+in the man page.    
+
+To quit this program, type 'q'.         
+
+                              GOOD LUCK!
+
+
+
+
+
+
+
+
+                                                                      
